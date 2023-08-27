@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15dp"
+        android:elevation="@dimen/_8dp"
+        android:layout_marginVertical="@dimen/_3dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                android:id="@+id/facilitiesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:text="1"
+                android:layout_margin="0.5dp"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_20dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+                <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                    android:id="@+id/facilityHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="heading"
+                    android:textSize="@dimen/_13sp"
+                    android:textColor="@color/black"/>
+
+                <com.bhive.beehiveapp.utils.fonts.CustomTvMedium
+                    android:id="@+id/facilityDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="description"
+                    android:textSize="@dimen/_12sp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginVertical="@dimen/_10dp"
+        android:layout_below="@id/mainCardView"
+        android:layout_marginHorizontal="@dimen/_10dp"
+        android:background="@color/LightSlateGray"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.whytot:BadgeForAppIcon:v1.0.0-beta.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6323904cb766c1f37bb60a9c8d712c5c/transformed/jetified-BadgeForAppIcon-v1.0.0-beta.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6323904cb766c1f37bb60a9c8d712c5c/transformed/jetified-BadgeForAppIcon-v1.0.0-beta.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6323904cb766c1f37bb60a9c8d712c5c/transformed/jetified-BadgeForAppIcon-v1.0.0-beta.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

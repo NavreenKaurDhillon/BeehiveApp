@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#FEBD20"/>
+                    <stroke
+                            android:width="@dimen/_1sdp"
+                            android:color="#FEBD20">
+                    </stroke>
+                    <corners
+                            android:radius="6dp">
+                    </corners>
+
+                </shape>
+            </item>
+            <item>
+                <bitmap android:gravity="right|center" android:src="@drawable/ic_down2" android:tint="@color/white"/>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

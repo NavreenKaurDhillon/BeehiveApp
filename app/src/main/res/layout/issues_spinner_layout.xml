@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="@dimen/_40dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+        android:id="@+id/statusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8dp"
+        android:text="Open"/>
+
+
+</RelativeLayout>

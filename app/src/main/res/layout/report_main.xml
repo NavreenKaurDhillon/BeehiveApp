@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:id="@+id/layout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_12dp"
+                        android:paddingTop="@dimen/_8dp">
+
+                        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                            android:id="@+id/totalText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5dp"
+                            android:text="Total"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sp" />
+
+                        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                            android:id="@+id/total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/totalText"
+                            android:gravity="start"
+                            android:text="10"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_14sp" />
+
+                        <View
+                            android:id="@+id/line1"
+                            android:layout_width="@dimen/_40dp"
+                            android:layout_height="@dimen/_1dp"
+                            android:layout_below="@id/totalText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:background="@color/colorPrimary" />
+
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:id="@+id/l1"
+                        android:layout_width="@dimen/_1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:id="@+id/layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_12dp"
+                        android:paddingTop="@dimen/_8dp">
+
+                        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                            android:id="@+id/openText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5dp"
+                            android:text="Open"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sp" />
+
+                        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                            android:id="@+id/open"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/openText"
+                            android:gravity="start"
+                            android:text="10"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_14sp" />
+
+                        <View
+                            android:id="@+id/line2"
+                            android:layout_width="@dimen/_40dp"
+                            android:layout_height="@dimen/_1dp"
+                            android:layout_below="@id/openText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:background="@color/colorPrimary" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/l2"
+                        android:layout_width="@dimen/_1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/layout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_12dp"
+                        android:paddingTop="@dimen/_8dp"
+
+                        >
+
+                        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                            android:id="@+id/inProgressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5dp"
+                            android:text="By me"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sp" />
+
+                        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                            android:id="@+id/progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/inProgressText"
+                            android:gravity="start"
+                            android:text="10"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_14sp" />
+
+                        <View
+                            android:id="@+id/line3"
+                            android:layout_width="@dimen/_40dp"
+                            android:layout_height="@dimen/_1dp"
+                            android:layout_below="@id/inProgressText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:background="@color/colorPrimary" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/layout4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_toRightOf="@id/l3"-->
+<!--                android:paddingHorizontal="@dimen/_12dp"-->
+<!--                android:paddingTop="@dimen/_8dp"-->
+
+<!--                >-->
+
+<!--                <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+<!--                    android:id="@+id/resolvedText"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="@dimen/_5dp"-->
+<!--                    android:text="All level issues"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_14sp" />-->
+
+<!--                <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+<!--                    android:id="@+id/resolved"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_toRightOf="@id/resolvedText"-->
+<!--                    android:gravity="start"-->
+<!--                    android:text="10"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textSize="@dimen/_14sp" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/line4"-->
+<!--                    android:layout_width="@dimen/_40dp"-->
+<!--                    android:layout_height="@dimen/_1dp"-->
+<!--                    android:layout_below="@id/resolvedText"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginTop="@dimen/_8dp"-->
+<!--                    android:background="@color/colorPrimary" />-->
+
+
+<!--            </RelativeLayout>-->
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

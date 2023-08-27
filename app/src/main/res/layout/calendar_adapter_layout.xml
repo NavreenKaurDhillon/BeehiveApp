@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/_3dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="3dp"
+            android:orientation="vertical">
+            <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                android:id="@+id/notificationTitle"
+                android:layout_width="match_parent"
+                android:text="Lift Servicing"
+                android:textSize="@dimen/_14sp"
+                android:layout_height="wrap_content" />
+
+            <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                android:id="@+id/notificationDescription"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="Your lift will require servicing and be out of order between 9-12pm during the first week of july."
+                android:textSize="@dimen/_12sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/textHeadingColor"/>
+
+</LinearLayout>

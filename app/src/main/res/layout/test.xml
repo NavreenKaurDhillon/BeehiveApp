@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/uploadImagesButton"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:elevation="@dimen/_10dp"
+        android:gravity="start"
+        android:weightSum="5"
+        android:paddingHorizontal="@dimen/_2sdp"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_weight="1"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="@dimen/_15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Beige">
+
+                <ImageView
+                    android:id="@+id/Image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_stroke_solid_button"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:shapeAppearanceOverlay="@style/ImageCardView" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/delete1"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/color_primary_dot"
+                android:padding="2dp"
+                android:backgroundTint="@color/dark_gray"
+                android:elevation="4dp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="@dimen/_15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/Beige">
+
+                <ImageView
+                    android:id="@+id/Image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_stroke_solid_button"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:shapeAppearanceOverlay="@style/ImageCardView" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/delete2"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/color_primary_dot"
+                android:padding="2dp"
+                android:backgroundTint="@color/dark_gray"
+                android:elevation="4dp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="@dimen/_15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+
+                android:background="@color/Beige">
+
+                <ImageView
+                    android:id="@+id/Image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_stroke_solid_button"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:shapeAppearanceOverlay="@style/ImageCardView" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/delete3"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/color_primary_dot"
+                android:padding="2dp"
+                android:backgroundTint="@color/dark_gray"
+                android:elevation="4dp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="@dimen/_15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+
+                android:background="@color/Beige">
+
+                <ImageView
+                    android:id="@+id/Image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_stroke_solid_button"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:shapeAppearanceOverlay="@style/ImageCardView" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/delete4"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/color_primary_dot"
+                android:padding="2dp"
+                android:backgroundTint="@color/dark_gray"
+                android:elevation="4dp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="@dimen/_15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+
+                android:background="@color/Beige">
+
+                <ImageView
+                    android:id="@+id/Image5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_stroke_solid_button"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:shapeAppearanceOverlay="@style/ImageCardView" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/delete5"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/color_primary_dot"
+                android:padding="2dp"
+                android:backgroundTint="@color/dark_gray"
+                android:elevation="4dp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl6"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:gravity="start"-->
+<!--            android:visibility="invisible">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="65dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                app:cardCornerRadius="@dimen/_15dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@color/Beige">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/Image6"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/gray_stroke_solid_button"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:src="@drawable/ic_baseline_add_24"-->
+<!--                    app:shapeAppearanceOverlay="@style/ImageCardView" />-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/delete6"-->
+<!--                android:layout_width="22dp"-->
+<!--                android:layout_height="22dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:background="@drawable/color_primary_dot"-->
+<!--                android:padding="2dp"-->
+<!--                android:backgroundTint="@color/dark_gray"-->
+<!--                android:elevation="4dp"-->
+<!--                android:src="@drawable/ic_close"-->
+<!--                android:visibility="gone"-->
+<!--                app:tint="@color/white" />-->
+
+<!--        </RelativeLayout>-->
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl7"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:gravity="start"-->
+<!--            android:visibility="invisible">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="65dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                app:cardCornerRadius="@dimen/_15dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@color/Beige">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/Image7"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/gray_stroke_solid_button"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:src="@drawable/ic_baseline_add_24"-->
+<!--                    app:shapeAppearanceOverlay="@style/ImageCardView" />-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/delete7"-->
+<!--                android:layout_width="22dp"-->
+<!--                android:layout_height="22dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:background="@drawable/color_primary_dot"-->
+<!--                android:padding="2dp"-->
+<!--                android:backgroundTint="@color/dark_gray"-->
+<!--                android:elevation="4dp"-->
+<!--                android:src="@drawable/ic_close"-->
+<!--                android:visibility="gone"-->
+<!--                app:tint="@color/white" />-->
+
+<!--        </RelativeLayout>-->
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl8"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:gravity="start"-->
+<!--            android:visibility="invisible">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="65dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                app:cardCornerRadius="@dimen/_15dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@color/Beige">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/Image8"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/gray_stroke_solid_button"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:src="@drawable/ic_baseline_add_24"-->
+<!--                    app:shapeAppearanceOverlay="@style/ImageCardView" />-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/delete8"-->
+<!--                android:layout_width="22dp"-->
+<!--                android:layout_height="22dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:background="@drawable/color_primary_dot"-->
+<!--                android:padding="2dp"-->
+<!--                android:backgroundTint="@color/dark_gray"-->
+<!--                android:elevation="4dp"-->
+<!--                android:src="@drawable/ic_close"-->
+<!--                android:visibility="gone"-->
+<!--                app:tint="@color/white" />-->
+
+<!--        </RelativeLayout>-->
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl9"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:gravity="start"-->
+<!--            android:visibility="invisible">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="65dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                app:cardCornerRadius="@dimen/_15dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@color/Beige">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/Image9"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/gray_stroke_solid_button"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:src="@drawable/ic_baseline_add_24"-->
+<!--                    app:shapeAppearanceOverlay="@style/ImageCardView" />-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/delete9"-->
+<!--                android:layout_width="22dp"-->
+<!--                android:layout_height="22dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:background="@drawable/color_primary_dot"-->
+<!--                android:padding="2dp"-->
+<!--                android:backgroundTint="@color/dark_gray"-->
+<!--                android:elevation="4dp"-->
+<!--                android:src="@drawable/ic_close"-->
+<!--                android:visibility="gone"-->
+<!--                app:tint="@color/white" />-->
+
+<!--        </RelativeLayout>-->
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl10"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:gravity="start"-->
+<!--            android:visibility="invisible">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="65dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                app:cardCornerRadius="@dimen/_15dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@color/Beige">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/Image10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/gray_stroke_solid_button"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:src="@drawable/ic_baseline_add_24"-->
+<!--                    app:shapeAppearanceOverlay="@style/ImageCardView" />-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/delete10"-->
+<!--                android:layout_width="22dp"-->
+<!--                android:layout_height="22dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:background="@drawable/color_primary_dot"-->
+<!--                android:padding="2dp"-->
+<!--                android:backgroundTint="@color/dark_gray"-->
+<!--                android:elevation="4dp"-->
+<!--                android:src="@drawable/ic_close"-->
+<!--                android:visibility="gone"-->
+<!--                app:tint="@color/white" />-->
+
+<!--        </RelativeLayout>-->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

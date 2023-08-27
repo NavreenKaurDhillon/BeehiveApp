@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment2">
+    <activity
+        android:id="@id/mainActivity"
+        android:name="com.bhive.beehiveapp.MainActivity"
+        tools:layout="@layout/activity_main"
+        android:label="MainActivity">
+
+    </activity>
+
+    <fragment
+        android:id="@+id/splashFragment2"
+        android:name="com.bhive.beehiveapp.Fragments.SplashFragment"
+        tools:layout="@layout/fragment_splash_screen"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment2_to_loginFragment2"
+            app:destination="@id/loginFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_splashFragment2_to_reportAnIssueMainFragment"
+            app:destination="@id/buildingCalendarFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.bhive.beehiveapp.Fragments.LoginFragment"
+        tools:layout="@layout/fragment_login_page"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        android:label="LoginFragment" >
+
+        <action
+            android:id="@+id/action_loginFragment2_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+
+        <action
+            android:id="@+id/action_loginFragment2_to_buildingCalendarFragment"
+            app:destination="@id/buildingCalendarFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+
+            />
+        <action
+            android:id="@+id/action_loginFragment2_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+           />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.bhive.beehiveapp.Fragments.RegisterFragment"
+        tools:layout="@layout/fragment_registeration_page"
+        android:label="RegisterFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        >
+
+        <action
+            android:id="@+id/action_registerFragment_to_calendarEventsFragment"
+            app:destination="@id/calendarEventsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.bhive.beehiveapp.Fragments.ForgotPasswordFragment"
+        tools:layout="@layout/fragment_forgot_password"
+        android:label="ForgotPasswordFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+           />
+    </fragment>
+    <fragment
+        android:id="@+id/afterHourServiceFragment"
+        tools:layout="@layout/fragment_afterhourservice"
+        android:name="com.bhive.beehiveapp.Fragments.AfterHourServiceFragment"
+        android:label="AfterHourServiceFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+       />
+
+    <fragment
+        android:id="@+id/allCalendarEventsFragment"
+        tools:layout="@layout/fragment_all_calendar_events"
+        android:name="com.bhive.beehiveapp.Fragments.AllCalendarEventsFragment"
+        android:label="AllCalendarEvents"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left">
+
+
+        <action
+            android:id="@+id/action_allCalendarEventsFragment_to_buildingCalendarFragment"
+            app:destination="@id/buildingCalendarFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calendarEventsFragment"
+        tools:layout="@layout/fragment_calender"
+        android:name="com.bhive.beehiveapp.Fragments.CalendarEventsFragment"
+        android:label="CalendarEventsFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        >
+
+
+        <action
+            android:id="@+id/action_calendarEventsFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2"
+            />
+        <action
+            android:id="@+id/action_calendarEventsFragment_to_allCalendarEventsFragment"
+            app:destination="@id/allCalendarEventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/marketplaceFragment"
+        tools:layout="@layout/fragment_marketplace"
+        android:name="com.bhive.beehiveapp.Fragments.MarketplaceFragment"
+        android:label="MarketplaceFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        />
+    <fragment
+        android:id="@+id/newsletterFragment"
+        tools:layout="@layout/fragment_newsletter"
+        android:name="com.bhive.beehiveapp.Fragments.NewsletterFragment"
+        android:label="NewsletterFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        />
+    <fragment
+        android:id="@+id/settingsFragment"
+        tools:layout="@layout/fragment_settings"
+        android:name="com.bhive.beehiveapp.Fragments.SettingsFragment"
+        android:label="SettingsFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left">
+        <action
+            android:id="@+id/action_settingsFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_settingsFragment_to_profilePageFragment"
+            app:destination="@id/profilePageFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_settingsFragment_to_login_fragment"
+            app:destination="@id/splashFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/reportAnIssueFragment"
+        tools:layout="@layout/fragment_reportanissue"
+        android:name="com.bhive.beehiveapp.Fragments.ReportAnIssueFragment"
+        android:label="ReportAnIssueFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        >
+
+        <action
+            android:id="@+id/action_reportAnIssueFragment_to_reportAnIssueMainFragment"
+            app:destination="@id/reportAnIssueMainFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_reportAnIssueFragment_to_statusIssuesFragment"
+            app:destination="@id/statusIssuesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        tools:layout="@layout/fragment_change_password"
+        android:name="com.bhive.beehiveapp.Fragments.ChangePasswordFragment"
+        android:label="ChangePasswordFragment" >
+        <action
+            android:id="@+id/action_changePasswordFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/buildingCalendarFragment"
+        tools:layout="@layout/fragment_building_calendar"
+        android:name="com.bhive.beehiveapp.Fragments.BuildingCalendarFragment"
+        android:label="BuildingCalendarFragment"
+        >
+        <action
+            android:id="@+id/action_buildingCalendarFragment_to_calendarEventsFragment"
+            app:destination="@id/calendarEventsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_buildingCalendarFragment_to_buildingFacilitiesFragment"
+            app:destination="@id/buildingFacilitiesFragment" />
+        <action
+            android:id="@+id/action_buildingCalendarFragment_to_allCalendarEventsFragment2"
+            app:destination="@id/allCalendarEventsFragment" />
+        <action
+            android:id="@+id/action_buildingCalendarFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.bhive.beehiveapp.Fragments.ProfilePageFragment"
+        tools:layout="@layout/fragment_profile_page"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        android:label="ProfilePageFragment" >
+        <action
+            android:id="@+id/action_profilePageFragment_to_buildingCalendarFragment"
+            app:destination="@id/buildingCalendarFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_profilePageFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+
+            />
+    </fragment>
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.bhive.beehiveapp.MainActivity"
+        android:label="MainActivity"
+        tools:layout="@layout/activity_main"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        />
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.bhive.beehiveapp.Fragments.NotificationsFragment"
+        android:label="NotificationsFragment"
+        tools:layout="@layout/fragment_notifications"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        >
+        <action
+            android:id="@+id/action_notificationsFragment_to_reportAnIssueFragment"
+            app:destination="@id/reportAnIssueFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reportAnIssueMainFragment"
+        android:name="com.bhive.beehiveapp.Fragments.ReportAnIssueMainFragment"
+        android:label="ReportAnIssueMainFragment"
+        app:enterAnim="@anim/slide_in_right"
+        tools:layout="@layout/fragment_report_an_issue_main"
+        app:exitAnim="@anim/slide_out_left">
+        <action
+            android:id="@+id/action_reportAnIssueMainFragment_to_statusIssuesFragment"
+            app:destination="@id/statusIssuesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left">
+<!--            <argument-->
+<!--                android:name="status"-->
+<!--                app:argType="integer"-->
+<!--                android:defaultValue="" />-->
+        </action>
+        <action
+            android:id="@+id/action_reportAnIssueMainFragment_to_reportAnIssueFragment"
+            app:destination="@id/reportAnIssueFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/issueDetailsFragment"
+        tools:layout="@layout/fragment_issues"
+        android:name="com.bhive.beehiveapp.Fragments.IssueDetailsFragment"
+        android:label="IssueDetailsFragment" />
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.bhive.beehiveapp.Fragments.BaseFragment"
+        android:label="BaseFragment" />
+    <fragment
+        android:id="@+id/statusIssuesFragment"
+        tools:layout="@layout/fragment_issues"
+        android:name="com.bhive.beehiveapp.Fragments.StatusIssuesFragment"
+        android:label="StatusIssuesFragment" />
+
+    <fragment
+        android:id="@+id/buildingRulesFragment"
+        tools:layout="@layout/fragment_building_rules"
+        android:name="com.bhive.beehiveapp.Fragments.BuildingRulesFragment"
+        android:label="BuildingRulesFragment"/>
+  <fragment
+        android:id="@+id/buildingFacilitiesFragment"
+        tools:layout="@layout/fragment_building_facilities"
+      android:name="com.bhive.beehiveapp.Fragments.BuildingFacilitiesFragment"
+      android:label="BuildingFacilitiesFragment">
+      <action
+          android:id="@+id/action_buildingFacilitiesFragment_to_buildingCalendarFragment"
+          app:destination="@id/buildingCalendarFragment" />
+  </fragment>
+
+</navigation>

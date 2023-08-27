@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/white"
+        tools:context=".fragment.ReportIssueFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#324755"
+            app:contentPadding="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:gravity="center_vertical"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <ImageView-->
+                <!--                        android:layout_width="18dp"-->
+                <!--                        android:layout_height="18dp"-->
+                <!--                        android:src="@drawable/ic_building" />-->
+
+                <!--                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                <!--                        android:id="@+id/buildingNameTV"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginStart="10dp"-->
+                <!--                        android:text="Docklands Building"-->
+                <!--                        android:textColor="@color/white"-->
+                <!--                        android:textSize="@dimen/_14sdp" />-->
+
+                <!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:gravity="center_vertical"-->
+                    <!--                        android:orientation="horizontal">-->
+
+                    <!--                        <ImageView-->
+                    <!--                            android:layout_width="18dp"-->
+                    <!--                            android:layout_height="18dp"-->
+                    <!--                            android:src="@drawable/ic_person" />-->
+
+                    <!--                        <com.bhive.beehiveapp.utils.fonts.CustomTvLight-->
+                    <!--                            android:id="@+id/tenantTV"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginStart="5dp"-->
+                    <!--                            android:gravity="center"-->
+                    <!--                            android:text="Tenants"-->
+                    <!--                            android:textColor="@color/white"-->
+                    <!--                            android:textSize="@dimen/_12sdp" />-->
+
+                    <!--                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_date_range_black_24dp" />
+
+                        <com.bhive.beehiveapp.utils.fonts.CustomTvLight
+                            android:id="@+id/dateTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:text="15 jun 2020"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/spinnerlayout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/cardView"-->
+        <!--            android:layout_marginVertical="@dimen/_40sdp"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--&lt;!&ndash;            <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:id="@+id/customTvLight"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:padding="@dimen/_5sdp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:text="Please enter your name"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:textColor="@color/black"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:textSize="@dimen/_15sdp" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;            <RelativeLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:id="@+id/spinner"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_below="@id/customTvLight"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_marginStart="@dimen/_5sdp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_marginEnd="@dimen/_5sdp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:background="#63B7B9BC"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:overScrollMode="ifContentScrolls"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:overlapAnchor="false">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                <androidx.appcompat.widget.AppCompatSpinner&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                    android:id="@+id/buildingSpinner"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_marginStart="@dimen/_5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_marginTop="@dimen/_5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_marginEnd="@dimen/_5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_marginBottom="@dimen/_5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:backgroundTint="@color/black"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:clickable="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:dropDownWidth="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:dropDownVerticalOffset="40dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:spinnerMode="dropdown">&ndash;&gt;-->
+        <!--&lt;!&ndash;                </androidx.appcompat.widget.AppCompatSpinner>&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;            </RelativeLayout>&ndash;&gt;-->
+        <!--        </LinearLayout>-->
+
+
+        <com.bhive.beehiveapp.utils.fonts.CustomEditTextRegular
+            android:id="@+id/issueTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardView"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:background="@drawable/edit_text"
+            android:hint="Title of your issue "
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <com.bhive.beehiveapp.utils.fonts.CustomEditTextRegular
+            android:id="@+id/customEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@id/issueTitle"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/edit_text"
+            android:gravity="start"
+            android:hint="Enter your problem"
+            android:maxLength="300"
+            android:padding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp" />
+
+        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+            android:id="@+id/AddImagesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customEditText"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Select images to upload"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/uploadImagesButton"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_below="@id/AddImagesText"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:elevation="@dimen/_10dp"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_2sdp"
+            android:weightSum="5">
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_7dp"
+                    android:background="@drawable/gray_stroke_solid_button"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:shapeAppearanceOverlay="@style/ImageCardView" />
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:layout_alignParentEnd="true"
+                    android:rotation="45"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:tint="@color/Red" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_7dp"
+                    android:background="@drawable/gray_stroke_solid_button"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:shapeAppearanceOverlay="@style/ImageCardView" />
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    android:layout_alignParentEnd="true"
+                    android:rotation="45"
+                    app:tint="@color/Red" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_7dp"
+                    android:background="@drawable/gray_stroke_solid_button"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:shapeAppearanceOverlay="@style/ImageCardView" />
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    android:layout_alignParentEnd="true"
+                    android:rotation="45"
+                    app:tint="@color/Red" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_7dp"
+                    android:background="@drawable/gray_stroke_solid_button"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:shapeAppearanceOverlay="@style/ImageCardView" />
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    android:layout_alignParentEnd="true"
+                    android:rotation="45"
+                    app:tint="@color/Red" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl5"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Image5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_7dp"
+                    android:background="@drawable/gray_stroke_solid_button"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:shapeAppearanceOverlay="@style/ImageCardView" />
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    android:layout_alignParentEnd="true"
+                    android:rotation="45"
+                    app:tint="@color/Red" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.bhive.beehiveapp.utils.fonts.CustomButton
+            android:id="@+id/reportBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uploadImagesButton"
+            android:layout_marginHorizontal="@dimen/_15dp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:background="@drawable/buton_selector"
+            android:fontFamily="sans-serif-black"
+            android:text="REPORT THIS ISSUE"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</layout>

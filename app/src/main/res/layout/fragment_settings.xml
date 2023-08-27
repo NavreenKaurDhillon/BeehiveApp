@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      >
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/LightGrey"
+            android:layout_height="1dp"/>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:background="@color/colorPrimaryDark"-->
+<!--            android:padding="12dp"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/userIcon"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="2"-->
+<!--                android:layout_height="60dp">-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/ic_user3"-->
+<!--                    app:civ_border_color="@color/textHeadingColor"-->
+<!--                    app:civ_border_width="1dp" />-->
+
+<!--                <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+<!--                    android:id="@+id/iconTV"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:maxLength="1"-->
+<!--                    android:text="U"-->
+<!--                    android:textColor="@color/textHeadingColor"-->
+<!--                    android:textSize="30sp" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/userDetails"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="7"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+<!--                    android:id="@+id/nameTV"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="User"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/headingSize"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--                <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+<!--                    android:id="@+id/buildingNameTV"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:text="Building name"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--            </LinearLayout>-->
+
+<!--      /-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <com.bhive.beehiveapp.utils.fonts.CustomTvLight-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight=".8"-->
+<!--                android:padding="10dp"-->
+<!--                android:textSize="@dimen/_14sp"-->
+<!--                android:text="@string/email_notifications"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--            <androidx.appcompat.widget.SwitchCompat-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight=".2"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:thumbTint="@color/colorPrimary"-->
+<!--                android:trackTint="@color/dark_gray"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="@color/LightGrey"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_height="1dp"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="15dp"
+            android:visibility="visible"
+            android:padding="@dimen/_3dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/editProfileIcon"
+                android:layout_width="@dimen/_25dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icons8_edit"
+                android:layout_height="@dimen/_25dp"
+                android:layout_centerVertical="true"
+                app:tint="@color/colorPrimary" />
+
+            <com.bhive.beehiveapp.utils.fonts.CustomTvMedium
+                android:id="@+id/editProfileText"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/editProfileIcon"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:layout_marginStart="@dimen/_5dp"
+                android:text="Edit Profile"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="15dp"
+            android:visibility="visible"
+            android:layout_marginVertical="@dimen/_8dp"
+            android:padding="@dimen/_3dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/changePasswordIcon"
+                android:layout_width="@dimen/_25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icons8_lock"
+                android:layout_height="@dimen/_25dp"
+                app:tint="@color/colorPrimary" />
+
+            <com.bhive.beehiveapp.utils.fonts.CustomTvMedium
+                android:id="@+id/changePasswordText"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:text="Change Password"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/changePasswordIcon"
+                android:layout_marginStart="@dimen/_5dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="15dp"
+            android:visibility="invisible"
+        android:layout_marginVertical="@dimen/_18sdp"
+            android:padding="@dimen/_3dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/paymentIcon"
+                android:layout_width="@dimen/_25dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icons8_credit_card_50"
+                android:layout_height="@dimen/_25dp"
+                app:tint="@color/colorPrimary" />
+
+            <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:textSize="15sp"
+                android:text="Payment Method"
+                android:layout_marginStart="@dimen/_5dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="15dp"
+            android:visibility="invisible"
+            android:layout_marginVertical="@dimen/_18sdp"
+            android:padding="@dimen/_3dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/calendarIcon"
+                android:layout_width="@dimen/_25dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icons8_calendar_50"
+                android:layout_height="@dimen/_25dp"
+                app:tint="@color/colorPrimary" />
+
+            <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:textSize="15sp"
+                android:text="Calendar"
+                android:layout_marginStart="@dimen/_5dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_marginHorizontal="15dp"-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_marginVertical="@dimen/_18sdp"-->
+<!--            android:padding="@dimen/_3dp"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/signoutIcon"-->
+<!--                android:layout_width="@dimen/_25dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:src="@drawable/icons8_logout_rounded_up_50"-->
+<!--                android:layout_height="@dimen/_25dp"-->
+<!--                app:tint="@color/colorPrimary" />-->
+
+<!--            <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+<!--                android:id="@+id/signoutText"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight=".8"-->
+<!--                android:textSize="15sp"-->
+<!--                android:text="Sign Out"-->
+<!--                android:layout_marginStart="@dimen/_5dp"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--        </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/deleteAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:background="@drawable/button_curved"
+                android:backgroundTint="@color/Red"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_25dp"
+                android:text="Delete Account"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

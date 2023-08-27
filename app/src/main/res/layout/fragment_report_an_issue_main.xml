@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/line"
+            android:layout_below="@id/headingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/LightestGray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#324755"
+                app:cardCornerRadius="@dimen/_5dp"
+                app:contentPadding="@dimen/_5dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/layout1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingHorizontal="@dimen/_12dp"
+                                    android:paddingTop="@dimen/_8dp">
+
+                                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                                        android:id="@+id/totalText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="@dimen/_5dp"
+                                        android:text="Total"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_14sp" />
+
+                                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                                        android:id="@+id/total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/totalText"
+                                        android:gravity="start"
+                                        android:text=""
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/_14sp" />
+
+                                    <View
+                                        android:id="@+id/line1"
+                                        android:layout_width="@dimen/_40dp"
+                                        android:layout_height="@dimen/_1dp"
+                                        android:layout_below="@id/totalText"
+                                        android:layout_marginTop="@dimen/_8dp"
+                                        android:background="@color/colorPrimary" />
+
+
+                                </RelativeLayout>
+
+
+                                <View
+                                    android:id="@+id/l1"
+                                    android:layout_width="@dimen/_1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/layout2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingHorizontal="@dimen/_12dp"
+                                    android:paddingTop="@dimen/_8dp">
+
+                                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                                        android:id="@+id/openText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="@dimen/_5dp"
+                                        android:text="Open"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_14sp" />
+
+                                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                                        android:id="@+id/open"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/openText"
+                                        android:gravity="start"
+                                        android:text=""
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/_14sp" />
+
+                                    <View
+                                        android:id="@+id/line2"
+                                        android:layout_width="@dimen/_40dp"
+                                        android:layout_height="@dimen/_1dp"
+                                        android:layout_below="@id/openText"
+                                        android:layout_marginTop="@dimen/_8dp"
+                                        android:background="@color/colorPrimary" />
+
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:id="@+id/l2"
+                                    android:layout_width="@dimen/_1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/layout3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingHorizontal="@dimen/_12dp"
+                                    android:paddingTop="@dimen/_8dp"
+
+                                    >
+
+                                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                                        android:id="@+id/inProgressText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="@dimen/_5dp"
+                                        android:text="By me"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_14sp" />
+
+                                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                                        android:id="@+id/progress"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/inProgressText"
+                                        android:gravity="start"
+                                        android:text=""
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/_14sp" />
+
+                                    <View
+                                        android:id="@+id/line3"
+                                        android:layout_width="@dimen/_40dp"
+                                        android:layout_height="@dimen/_1dp"
+                                        android:layout_below="@id/inProgressText"
+                                        android:layout_marginTop="@dimen/_8dp"
+                                        android:background="@color/colorPrimary" />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <!--            <RelativeLayout-->
+                        <!--                android:id="@+id/layout4"-->
+                        <!--                android:layout_width="wrap_content"-->
+                        <!--                android:layout_height="wrap_content"-->
+                        <!--                android:layout_toRightOf="@id/l3"-->
+                        <!--                android:paddingHorizontal="@dimen/_12dp"-->
+                        <!--                android:paddingTop="@dimen/_8dp"-->
+
+                        <!--                >-->
+
+                        <!--                <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                        <!--                    android:id="@+id/resolvedText"-->
+                        <!--                    android:layout_width="wrap_content"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:layout_marginEnd="@dimen/_5dp"-->
+                        <!--                    android:text="All level issues"-->
+                        <!--                    android:textColor="@color/white"-->
+                        <!--                    android:textSize="@dimen/_14sp" />-->
+
+                        <!--                <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                        <!--                    android:id="@+id/resolved"-->
+                        <!--                    android:layout_width="wrap_content"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:layout_toRightOf="@id/resolvedText"-->
+                        <!--                    android:gravity="start"-->
+                        <!--                    android:text="10"-->
+                        <!--                    android:textColor="@color/colorPrimary"-->
+                        <!--                    android:textSize="@dimen/_14sp" />-->
+
+                        <!--                <View-->
+                        <!--                    android:id="@+id/line4"-->
+                        <!--                    android:layout_width="@dimen/_40dp"-->
+                        <!--                    android:layout_height="@dimen/_1dp"-->
+                        <!--                    android:layout_below="@id/resolvedText"-->
+                        <!--                    android:layout_centerHorizontal="true"-->
+                        <!--                    android:layout_marginTop="@dimen/_8dp"-->
+                        <!--                    android:background="@color/colorPrimary" />-->
+
+
+                        <!--            </RelativeLayout>-->
+
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+
+                <!--            <HorizontalScrollView-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:fillViewport="true"-->
+                <!--                android:scrollbars="none"-->
+                <!--                android:layout_height="match_parent">-->
+
+                <!--            <RelativeLayout-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="45dp">-->
+
+                <!--                <RelativeLayout-->
+                <!--                    android:id="@+id/layout1"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:paddingHorizontal="@dimen/_12dp"-->
+                <!--                    android:paddingTop="@dimen/_8dp">-->
+
+                <!--                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                <!--                        android:id="@+id/totalText"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginEnd="@dimen/_5dp"-->
+                <!--                        android:text="Total"-->
+                <!--                        android:textColor="@color/white"-->
+                <!--                        android:textSize="@dimen/_14sp" />-->
+
+                <!--                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                <!--                        android:id="@+id/total"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_toRightOf="@id/totalText"-->
+                <!--                        android:gravity="start"-->
+                <!--                        android:text="10"-->
+                <!--                        android:textColor="@color/colorPrimary"-->
+                <!--                        android:textSize="@dimen/_14sp" />-->
+
+                <!--                    <View-->
+                <!--                        android:id="@+id/line1"-->
+                <!--                        android:layout_width="@dimen/_40dp"-->
+                <!--                        android:layout_height="@dimen/_1dp"-->
+                <!--                        android:layout_below="@id/totalText"-->
+                <!--                        android:layout_centerHorizontal="true"-->
+                <!--                        android:layout_marginTop="@dimen/_8dp"-->
+                <!--                        android:background="@color/colorPrimary" />-->
+
+
+                <!--                </RelativeLayout>-->
+
+
+                <!--                <View-->
+                <!--                    android:id="@+id/l1"-->
+                <!--                    android:layout_width="@dimen/_1dp"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_toRightOf="@id/layout1"-->
+                <!--                    android:background="@color/white" />-->
+
+                <!--                <RelativeLayout-->
+                <!--                    android:id="@+id/layout2"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_toRightOf="@id/l1"-->
+                <!--                    android:paddingHorizontal="@dimen/_12dp"-->
+                <!--                    android:paddingTop="@dimen/_8dp">-->
+
+                <!--                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                <!--                        android:id="@+id/openText"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginEnd="@dimen/_5dp"-->
+                <!--                        android:text="Open"-->
+                <!--                        android:textColor="@color/white"-->
+                <!--                        android:textSize="@dimen/_14sp" />-->
+
+                <!--                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                <!--                        android:id="@+id/open"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_toRightOf="@id/openText"-->
+                <!--                        android:gravity="start"-->
+                <!--                        android:text="10"-->
+                <!--                        android:textColor="@color/colorPrimary"-->
+                <!--                        android:textSize="@dimen/_14sp" />-->
+
+                <!--                    <View-->
+                <!--                        android:id="@+id/line2"-->
+                <!--                        android:layout_width="@dimen/_40dp"-->
+                <!--                        android:layout_height="@dimen/_1dp"-->
+                <!--                        android:layout_below="@id/openText"-->
+                <!--                        android:layout_centerHorizontal="true"-->
+                <!--                        android:layout_marginTop="@dimen/_8dp"-->
+                <!--                        android:background="@color/colorPrimary" />-->
+
+
+                <!--                </RelativeLayout>-->
+
+                <!--                <View-->
+                <!--                    android:id="@+id/l2"-->
+                <!--                    android:layout_width="@dimen/_1dp"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_toRightOf="@id/layout2"-->
+                <!--                    android:background="@color/white" />-->
+
+                <!--                <RelativeLayout-->
+                <!--                    android:id="@+id/layout3"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_toRightOf="@id/l2"-->
+                <!--                    android:paddingHorizontal="@dimen/_12dp"-->
+                <!--                    android:paddingTop="@dimen/_8dp"-->
+
+                <!--                    >-->
+
+                <!--                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                <!--                        android:id="@+id/inProgressText"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginEnd="@dimen/_5dp"-->
+                <!--                        android:text="By me"-->
+                <!--                        android:textColor="@color/white"-->
+                <!--                        android:textSize="@dimen/_14sp" />-->
+
+                <!--                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                <!--                        android:id="@+id/progress"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_toRightOf="@id/inProgressText"-->
+                <!--                        android:gravity="start"-->
+                <!--                        android:text="10"-->
+                <!--                        android:textColor="@color/colorPrimary"-->
+                <!--                        android:textSize="@dimen/_14sp" />-->
+
+                <!--                    <View-->
+                <!--                        android:id="@+id/line3"-->
+                <!--                        android:layout_width="@dimen/_40dp"-->
+                <!--                        android:layout_height="@dimen/_1dp"-->
+                <!--                        android:layout_below="@id/inProgressText"-->
+                <!--                        android:layout_centerHorizontal="true"-->
+                <!--                        android:layout_marginTop="@dimen/_8dp"-->
+                <!--                        android:background="@color/colorPrimary" />-->
+
+
+                <!--                </RelativeLayout>-->
+
+                <!--                <View-->
+                <!--                    android:id="@+id/l3"-->
+                <!--                    android:layout_width="@dimen/_1dp"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_toRightOf="@id/layout3"-->
+                <!--                    android:background="@color/white" />-->
+
+                <!--                <RelativeLayout-->
+                <!--                    android:id="@+id/layout4"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_toRightOf="@id/l3"-->
+                <!--                    android:paddingHorizontal="@dimen/_12dp"-->
+                <!--                    android:paddingTop="@dimen/_8dp"-->
+
+                <!--                    >-->
+
+                <!--                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                <!--                        android:id="@+id/resolvedText"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginEnd="@dimen/_5dp"-->
+                <!--                        android:text="All level issues"-->
+                <!--                        android:textColor="@color/white"-->
+                <!--                        android:textSize="@dimen/_14sp" />-->
+
+                <!--                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+                <!--                        android:id="@+id/resolved"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_toRightOf="@id/resolvedText"-->
+                <!--                        android:gravity="start"-->
+                <!--                        android:text="10"-->
+                <!--                        android:textColor="@color/colorPrimary"-->
+                <!--                        android:textSize="@dimen/_14sp" />-->
+
+                <!--                    <View-->
+                <!--                        android:id="@+id/line4"-->
+                <!--                        android:layout_width="@dimen/_40dp"-->
+                <!--                        android:layout_height="@dimen/_1dp"-->
+                <!--                        android:layout_below="@id/resolvedText"-->
+                <!--                        android:layout_centerHorizontal="true"-->
+                <!--                        android:layout_marginTop="@dimen/_8dp"-->
+                <!--                        android:background="@color/colorPrimary" />-->
+
+
+                <!--                </RelativeLayout>-->
+
+                <!--            </RelativeLayout>-->
+                <!--            </HorizontalScrollView>-->
+
+            </androidx.cardview.widget.CardView>
+
+            <com.bhive.beehiveapp.utils.fonts.CustomTvRegular
+                android:id="@+id/notFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/_100dp"
+                android:text="No Notification Found"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/issuesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView" />
+
+            <ImageView
+                android:id="@+id/addIssue"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_5dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginEnd="@dimen/_5dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:background="@drawable/color_primary_dot"
+                android:elevation="@dimen/_2dp"
+                android:padding="@dimen/_5dp"
+                android:src="@drawable/ic_baseline_add_24"
+                app:tint="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

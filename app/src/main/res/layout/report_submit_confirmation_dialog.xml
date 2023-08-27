@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_5dp"
+        android:paddingBottom="@dimen/_10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/closeV"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <ImageView
+            android:id="@+id/clockIV"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/closeV"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20dp"
+            android:src="@drawable/ic_baseline_alarm_24"
+            app:tint="#9eb3c0" />
+
+        <com.bhive.beehiveapp.utils.fonts.CustomTvRegular
+            android:id="@+id/issueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clockIV"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_35dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="You will be notified once the issue is resolved."
+            android:textAlignment="center"
+            android:textColor="#324755"
+            android:textSize="@dimen/_14sp" />
+
+        <com.bhive.beehiveapp.utils.fonts.CustomTvRegular
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/issueText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="@dimen/_15dp"
+            android:layout_marginBottom="@dimen/_30dp"
+            android:background="@drawable/blue_stroke_solid"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_5dp"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sp"></com.bhive.beehiveapp.utils.fonts.CustomTvRegular>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

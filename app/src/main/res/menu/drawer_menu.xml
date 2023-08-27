@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/buildingCalendar"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="HOME"/>
+
+    <item
+        android:id="@+id/newsLetter"
+        android:icon="@drawable/ic_newsletter"
+        android:title="YOUR BUILDING"/>
+
+    <item
+        android:id="@+id/marketPlace"
+        android:icon="@drawable/ic_marketplace"
+        android:title="CALENDAR"/>
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/alert"
+        android:title="NOTIFICATIONS"/>
+
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="CODE OF CONDUCT"/>
+
+    <item
+        android:id="@+id/afterHourService"
+        android:icon="@drawable/ic_gear"
+        android:title="SETTINGS"/>
+
+    <item
+        android:id="@+id/reportAnIssue"
+        android:icon="@drawable/ic_baseline_local_phone_24"
+        android:title="CONTACT"/>
+
+
+
+</menu>

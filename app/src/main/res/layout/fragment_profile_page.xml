@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/headingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/transparent"
+        android:elevation="@dimen/_4dp"
+        android:paddingVertical="@dimen/_8dp">
+
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/cardview_dark_background" />
+
+        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+            android:id="@+id/buildingHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/_5dp"
+            android:layout_toLeftOf="@id/closeIcon"
+            android:layout_toRightOf="@id/backIcon"
+            android:padding="@dimen/_5dp"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/headingSize" />
+
+        <ImageView
+            android:id="@+id/closeIcon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_close"
+            android:visibility="gone"
+            app:tint="@color/cardview_dark_background" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/headingLayout"
+        android:background="@color/LightestGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_below="@id/line"
+            android:orientation="vertical">
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/colorPrimaryDark"-->
+<!--                >-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/backIV"-->
+<!--                    android:layout_width="@dimen/_25dp"-->
+<!--                    android:layout_height="@dimen/_25dp"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:src="@drawable/ic_arrow_left" />-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/frameLayout"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_marginVertical="20dp"-->
+<!--                    android:layout_height="110dp"-->
+<!--                    android:layout_centerInParent="true">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/profileIV"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:paddingEnd="@dimen/_5dp"-->
+<!--                        android:paddingBottom="@dimen/_5dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/ic_user3"-->
+<!--                        android:visibility="visible"-->
+<!--                        app:civ_border_color="@color/textHeadingColor"-->
+<!--                        app:civ_border_width="1dp" />-->
+
+<!--                    <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold-->
+<!--                        android:id="@+id/text"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:elevation="@dimen/_5dp"-->
+<!--                        android:maxLength="1"-->
+<!--                        android:text="U"-->
+<!--                        android:textColor="@color/textHeadingColor"-->
+<!--                        android:textSize="45sp" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/imageIcon"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_alignParentBottom="true"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_marginEnd="2dp"-->
+<!--                        android:layout_marginBottom="2dp"-->
+<!--                        android:background="@drawable/white_stroke_bg"-->
+<!--                        android:gravity="center">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/cameraIV"-->
+<!--                            android:layout_width="20dp"-->
+<!--                            android:layout_height="20dp"-->
+<!--                            android:contentDescription="@string/upload_image"-->
+<!--                            android:src="@drawable/ic_baseline_photo_camera_24"-->
+<!--                            app:tint="@color/white" />-->
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </RelativeLayout>-->
+
+<!--            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp">
+
+
+                <com.bhive.beehiveapp.utils.fonts.CustomTvLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:elevation="@dimen/_4dp"
+                    android:text="First name"
+                    android:textColor="@color/LightestGray" />
+
+                <com.bhive.beehiveapp.utils.fonts.CustomEditTextRegular
+                    android:id="@+id/firstNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapSentences"
+                    android:maxLength="30"
+                    android:padding="8dp"
+                    android:text="gnghng "
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#39373737"
+                    android:textCursorDrawable="@null" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@color/LightestGray" />
+
+                <com.bhive.beehiveapp.utils.fonts.CustomTvLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:elevation="@dimen/_4dp"
+                    android:text="Last name"
+                    android:textColor="@color/LightestGray" />
+
+                <com.bhive.beehiveapp.utils.fonts.CustomEditTextRegular
+                    android:id="@+id/lastNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapSentences"
+                    android:maxLength="30"
+                    android:padding="8dp"
+                    android:text=" "
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#39373737" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@color/LightestGray" />
+
+                <com.bhive.beehiveapp.utils.fonts.CustomTvLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:elevation="@dimen/_4dp"
+                    android:text="Phone number"
+                    android:textColor="@color/LightestGray" />
+
+                <com.bhive.beehiveapp.utils.fonts.CustomEditTextRegular
+                    android:id="@+id/phoneNumberET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:padding="8dp"
+                    android:text=" "
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#39373737" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@color/LightestGray" />
+
+                <com.bhive.beehiveapp.utils.fonts.CustomTvLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:elevation="@dimen/_4dp"
+                    android:text="Email"
+                    android:textColor="@color/LightestGray" />
+
+                <com.bhive.beehiveapp.utils.fonts.CustomEditTextRegular
+                    android:id="@+id/emailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:saveEnabled="false"
+                    android:text=" "
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/LightestGray"
+                    android:textColorHint="#39373737" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@color/LightestGray" />
+
+                <com.bhive.beehiveapp.utils.fonts.CustomButton
+                    android:id="@+id/updateBT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/button_curved"
+                    android:elevation="6dp"
+                    android:text="UPDATE"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+</RelativeLayout>
+    </ScrollView>
+
+</layout>

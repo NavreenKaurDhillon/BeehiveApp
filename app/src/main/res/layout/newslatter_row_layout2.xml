@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    android:layout_margin="8dp"
+    android:layout_height="180dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="#80000000"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight=".9"
+                android:text="Title"
+                android:textColor="@color/white"
+                android:maxLines="4"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/forwardArrow"
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_arrow_forward_24"
+                android:layout_height="wrap_content"
+                app:tint="@color/white" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

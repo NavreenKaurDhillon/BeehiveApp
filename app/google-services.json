@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "157250002058",
+    "project_id": "bheehive-41147",
+    "storage_bucket": "bheehive-41147.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157250002058:android:3d383456ca7466cb45e173",
+        "android_client_info": {
+          "package_name": "com.bhive.beehiveapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157250002058-pslgide1irprb9geltlvo9tgu55ggbs4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bhive.beehiveapp",
+            "certificate_hash": "2215fa4f70c0a446d42934bfad84f1bdd4438f58"
+          }
+        },
+        {
+          "client_id": "157250002058-7q5fa96rpq35gftcgk268vscmce7n384.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPXrc-6nzNNc1-pM3xo5qpnS6cI6wK78I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157250002058-7q5fa96rpq35gftcgk268vscmce7n384.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "157250002058-6eb456uarlm2ik517j19ll266f7ekv40.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.community.bhive"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

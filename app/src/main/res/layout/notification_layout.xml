@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/_10dp"
+    android:paddingHorizontal="@dimen/_15dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/issueIcon"
+        android:layout_width="@dimen/_35dp"
+        android:layout_height="@dimen/_35dp"
+        android:src="@drawable/beehive"
+        android:background="@color/transparent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10dp"
+        android:orientation="vertical">
+
+        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/issueTitle"
+            android:text="issue title"/>
+
+        <com.bhive.beehiveapp.utils.fonts.CustomTvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:id="@+id/issueDes"
+            android:text="issue description"/>
+
+    </LinearLayout>
+
+</LinearLayout>

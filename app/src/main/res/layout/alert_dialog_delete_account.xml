@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_30sdp"
+        android:paddingHorizontal="@dimen/_5dp"
+        >
+
+        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Are you sure to Delete account?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp" />
+
+        <com.bhive.beehiveapp.utils.fonts.CustomTvRegular
+            android:id="@+id/messageTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTV"
+            android:layout_marginTop="@dimen/_5dp"
+            android:text="Your account will be deleted permanently and you will not able to recover it in future"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/messageTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/black_srtroke"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_20dp"
+            android:weightSum="2">
+
+
+
+            <com.bhive.beehiveapp.utils.fonts.CustomTvRegular
+                android:id="@+id/cancelTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="15dp"
+                android:text="NO"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+            <com.bhive.beehiveapp.utils.fonts.CustomTvRegular
+                android:id="@+id/leaveTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/leaveTV"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="15dp"
+                android:textColor="@color/Red"
+                android:text="DELETE"
+                android:textAlignment="center"
+                android:textSize="@dimen/_13sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

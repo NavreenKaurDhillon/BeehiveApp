@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/RL"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_building"
+            app:tint="@color/white" />
+
+        <com.bhive.beehiveapp.utils.fonts.CustomTvSemiBold
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:elevation="@dimen/_4dp"
+            android:focusable="true"
+            android:text="Building Calendar"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
